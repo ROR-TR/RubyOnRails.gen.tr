@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :questions
+
   root 'articles#index'
 
   resources :articles do
