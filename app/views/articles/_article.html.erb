@@ -1,3 +1,4 @@
+<% cache article do %>
 <div class="col-lg-12">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -5,9 +6,11 @@
     </div>
     <div class="panel-body">
       <%= article.content %>
+      <%= article.comments.count %> Yorum var
       <div class="col-lg-12 text-right">
         <%= link_to 'Devamını gör', article, class: 'btn btn-primary' %>
       </div>
     </div>
   </div>
 </div>
+<% end %>

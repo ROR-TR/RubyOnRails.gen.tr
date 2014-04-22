@@ -18,3 +18,5 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'unicorn'
 # gem 'debugger', group: [:development, :test]
 
+gem 'quiet_assets', :group => :development
+
