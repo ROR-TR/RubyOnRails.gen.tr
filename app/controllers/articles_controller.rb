@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    @new_comment = Comment.new
+    @new_comment  = Comment.new
   end
 
   # GET /articles/new
@@ -70,6 +70,6 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:user_id, :title, :content, :slug)
+      params.require(:article).permit(:title, :content, :slug)
     end
 end

@@ -3,13 +3,21 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create comment_params
+    @comment.article = @article
     if @comment.save
-      redirect_to @article
+      respond_to do |format|
+        format.js
+        format.html { redirect_to @article }
+      end
     else
       redirect_to @article
     end
   end
 
+  def destroy
+    @comment = Comment.find params[:id]
+    @comment.destroy
+  end
   private
 
 
