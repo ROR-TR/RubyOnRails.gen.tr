@@ -18,8 +18,8 @@ class CommentsController < ApplicationController
     @comment = Comment.find params[:id]
     @comment.destroy
   end
-  private
 
+  private
 
     def set_article
       @article = Article.find params[:article_id]
