@@ -1,6 +1,6 @@
 # rubyonrails.gen.tr için kurulum
 
-açıklamalar
+### açıklamalar
 
 `>` lokal
 
@@ -8,10 +8,14 @@ açıklamalar
 
 `$` sunucuda deploy kullanıcısı
 
+## Lokalde yapılacaklar
+
 lokaldeki global gemler
 
 	> gem install mina
 	> gem install mailcatcher
+
+## Sunucuda Yapılacaklar
 
 sunucudaki gereklilikler ve deploy kullanıcısının yaratılması
 
@@ -29,3 +33,13 @@ deploy kullanıcısı ile yapılacaklar, mina icin hazırlık
 	$ cd /var
 	$ sudo mkdir -p www/rorgentr
 	$ exit
+
+## Deployment
+
+ilk deployment öncesi
+
+	> mina setup
+
+her bir deployment için
+
+	> mina deploy
