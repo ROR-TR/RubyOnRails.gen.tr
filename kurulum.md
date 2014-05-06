@@ -1,6 +1,11 @@
+# rubyonrails.gen.tr için kurulum
+
 açıklamalar
+
 `>` lokal
+
 `#` sunucuda root
+
 `$` sunucuda deploy kullanıcısı
 
 lokaldeki global gemler
