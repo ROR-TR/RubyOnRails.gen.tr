@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_filter :set_article
+  before_action :set_article
 
   def create
     @comment = Comment.create comment_params
