@@ -10,6 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require articles
+ *= require base
+ *= require comments
+ *= require questions
+ *= require scaffolds
+ *= require sessions
  *= require_self
  */
+
+body {
+  padding-top: 60px;
+}
